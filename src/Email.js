@@ -92,7 +92,7 @@ alert("Please insert Correct input")
               </p>
              
               <div class="ui-component-cta ui-layout-flex">
-                <form class="ui-component-form ui-layout-grid ui-layout-column-4" onSubmit={()=>setLocal(url)}>
+                <form action="#" class="ui-component-form ui-layout-grid ui-layout-column-4" onSubmit={()=>setLocal(url)}>
                   <input id="email" type="email" placeholder="Email" class="ui-component-input ui-component-input-medium" onChange={(e)=>setEmail(e.target.value)} required />
                   <button type="submit" class="ui-component-button ui-component-button-medium ui-component-button-primary">Download Now</button>
                 </form>
