@@ -135,7 +135,21 @@ body {
 /*--------------------------------------------------------------
 3.0 TYPOGRAPHY
 --------------------------------------------------------------*/
-
+.input_board {
+  padding: 1rem;
+  justify-content: center;
+  background-color: #666;
+  border-radius: 5px;
+  margin: 2px 2.5rem;
+}
+.input_board input {
+  background-color: white;
+  padding: 0.67rem;
+  border: 1.5px solid black;
+  border-radius: 9px;
+  margin: 2px;
+  width: 65%;
+}
 a {
   color: var(--ui-color-brand);
   text-decoration: none;
@@ -145,7 +159,86 @@ h1,
 p {
   margin-top: 0;
 }
+/*--------------------------------*/
+.course .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+.course .box-container .box {
+  width: 13rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin: 1.5rem;
+}
+
+.course .box-container .box img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.course .box-container .box .content {
+  padding: 0.5rem;
+}
+
+.course .box-container .box .content .stars i {
+  color: #f39c12;
+  font-size: 1.3rem;
+  padding: 0.8rem 0.1rem;
+}
+
+.course .box-container .box .content .title {
+  color: #444;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.course .box-container .box .content .title:hover {
+  text-decoration: underline;
+}
+
+.course .box-container .box .content p {
+  padding: 0.1rem 0;
+  color: #666;
+  font-size: 0.5rem;
+}
+
+.course .box-container .box .content .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+.course .box-container .box .content .info h3 {
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  color: #666;
+}
+
+.course .box-container .box .content .info h3 i {
+  color: #f39c12;
+}
+
+.course .box-container .box .price {
+  position: absolute;
+  top: 16rem;
+  right: 1rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--gradient);
+  color: green;
+  font-size: 1.4rem;
+}
+
+/*--------------------------------*/
 h1 {
   color: var(--ui-color-typography-heading);
   font-size: var(--ui-typography-h1);
